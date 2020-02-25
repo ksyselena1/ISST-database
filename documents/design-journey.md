@@ -9,13 +9,19 @@ Be clear and concise in your writing. Bullets points are encouraged.
 ### Describe your Catalog (Milestone 1)
 > What will your collection be about? What types of attributes will you keep track of for the *things* in your catalog? 1-2 sentences.
 
+My collection will be about a course catalog for ISST majors. There will be attributes for larger categories for the major requirements like Liberal Studies requirement, major-approved elective requirement, major core requirements, etc. These will keep track of each courses that go underneath each category.
 
 ### Target Audience(s) (Milestone 1)
 > Tell us about your target audience(s).
 
+My target audience will be anyone interested in becoming a ISST major to show them options of courses they would be taking, or students who are already in an ISST major, looking for courses to take.
 
 ### Design Patterns (Milestone 1)
 > Review some existing catalog that are similar to yours. List the catalog's you reviewed here. Write a small reflection on how you might use the design patterns you identified in your review in your own catalog.
+
+I reviewed Cornell's course rosters, Cornell Engineering's liberal studies catalog, Cornell's degree requirements page on Information Science website, as well as Cornell's Courses of Study Search.
+These catalogs use broader categories to organize each type and branch into smaller items. They also organize using a specfic order like alphabetizing or using numerical codes.
+
 
 
 ## Design & Planning (Milestone 2)
