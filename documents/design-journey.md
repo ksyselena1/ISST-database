@@ -10,6 +10,7 @@ Be clear and concise in your writing. Bullets points are encouraged.
 > What will your collection be about? What types of attributes will you keep track of for the *things* in your catalog? 1-2 sentences.
 
 My collection will be about a course catalog for ISST majors. There will be attributes for larger categories for the major requirements like Liberal Studies requirement, major-approved elective requirement, major core requirements, etc. These will keep track of each courses that go underneath each category.
+Attribuets: Name of course, number of credits, which requirement is fulfilled, description, professor name.
 
 ### Target Audience(s) (Milestone 1)
 > Tell us about your target audience(s).
@@ -35,13 +36,18 @@ These catalogs use broader categories to organize each type and branch into smal
 ## Partials (Milestone 2)
 > If you have any partials, plan them here.
 
+This catalog will be on one page, so partials are not necessary.
 
 ## Database Schema (Milestone 2)
 > Describe the structure of your database. You may use words or a picture. A bulleted list is probably the simplest way to do this. Make sure you include constraints for each field.
 
-Table: movies
-- field 1: description..., constraints...
-- field...
+Table: courses
+- id: INTEGER {PK, U, NN, AI}
+- name: TEXT {NN}
+- numcredits: INTEGER {NN}
+- req: TEXT {NN}
+- description: TEXT {NN}
+- professorname: TEXT
 
 
 ## Database Query Plan (Milestone 2)
@@ -50,13 +56,14 @@ Table: movies
 1. All records
 
     ```
-    TODO
+    SELECT *
+    FROM courses
     ```
 
 2. Search records
 
     ```
-    TODO
+    SELECT
     ```
 
 3. Insert record
