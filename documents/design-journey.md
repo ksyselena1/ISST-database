@@ -57,24 +57,49 @@ Table: courses
 
     ```
     SELECT *
-    FROM courses
+    FROM courses;
     ```
 
 2. Search records
 
     ```
-    SELECT
+    from courses get user input find records
     ```
 
 3. Insert record
 
     ```
-    TODO
+    from courses insert user input into db
     ```
 
 
 ## Code Planning (Milestone 2)
 > Plan any PHP code you'll need here.
+
+    ```
+    $db = open_sqlite_db("secure/courses.sqlite");
+
+    <?php
+        $sql = "SELECT* FROM courses;";
+        $result = exec_sql_query($db, $sql);
+        $records = $result->fetchAll();
+        ?>
+    <table>
+      <tr>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Number of Credits</th>
+        <th>Fulfils Requirement</th>
+        <th>Description</th>
+      </tr>
+      <?php
+      foreach ($records as $record) {
+        print_record($record);
+      }
+      ?>
+    </table>
+
+    ```
 
 
 # Reflection (Final Submission)

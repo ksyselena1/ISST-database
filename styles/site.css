@@ -1,0 +1,37 @@
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: white;
+  margin: 0 0;
+}
+header{
+  display: flex;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  background-color: blue;
+  align-items: center;
+  font-size: x-large;
+
+}
+.title{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+footer {
+  color: white;
+  background-color:grey;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+a{
+
+}
