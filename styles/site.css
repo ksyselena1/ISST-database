@@ -1,11 +1,11 @@
 
 body {
   font-family: Verdana, Arial, sans-serif;
-  color: white;
   margin: 0 0;
 }
 header{
   display: flex;
+  color: white;
   height: 300px;
   position: relative;
   text-align: center;
@@ -30,8 +30,4 @@ footer {
   font-size: 30px;
   margin-top: 50px;
   padding: 20px;
-}
-
-a{
-
 }
