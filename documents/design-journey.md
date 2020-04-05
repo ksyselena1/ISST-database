@@ -67,6 +67,7 @@ Table: courses
 - req: TEXT {NN}
 - description: TEXT {NN}
 
+None of the elements can be NULL.
 
 ## Database Query Plan (Milestone 2)
 > Plan your database queries. You may use natural language, pseudocode, or SQL.]

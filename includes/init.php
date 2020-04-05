@@ -38,4 +38,16 @@ function exec_sql_query($db, $sql, $params = array())
   }
   return null;
 }
+
+//user-defined function to check if any elements inside the array are NULL.
+function anynull($array)
+{
+  $thisnull = FALSE;
+  foreach ($array as &$value) {
+    if ($value == NULL) {
+      $thisnull = TRUE;
+    }
+  return $thisnull;
+  }
+}
 ?>

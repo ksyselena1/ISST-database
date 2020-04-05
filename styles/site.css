@@ -31,3 +31,50 @@ footer {
   margin-top: 50px;
   padding: 20px;
 }
+
+main{
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 130%;
+}
+
+.req{
+  display: flex;
+flex-direction: column;
+  justify-content: flex-end;
+
+}
+.check{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#courseform{
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  width: 500px;
+
+
+}
+.button{
+  display:flex;
+  justify-content: flex-end;
+}
+.comment{
+  display: flex;
+  flex-direction: row;
+}
+table{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+td{
+  padding-right: 50px;
+}
+th{
+  text-align: left;
+  padding-right: 50px;
+}
