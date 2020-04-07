@@ -40,6 +40,7 @@ function exec_sql_query($db, $sql, $params = array())
 }
 
 //user-defined function to check if any elements inside the array are NULL.
+//allows to minimize repeated code to check if a constant is NULL or not.
 function anynull($array)
 {
   $thisnull = FALSE;

@@ -123,3 +123,5 @@ None of the elements can be NULL.
 
 # Reflection (Final Submission)
 > Take this time to reflect on what you learned during this assignment. How have you improved since Project 1? What things did you have trouble with?
+
+Since Project 1, I learned more about database and how databases can be used and manipulated in a website to show information/catalog to users. I found it interesting how databse along with dynamic web server can allow users to search or insert into the database. I had trouble with debugging and trying to ensure that the searching through the database resulted in the intended outcome. It was also difficult to debug the insert form as many times a proper information failed to be inserted or wrong information wrongly was inserted into the database. I tried to debug by going through the code, the error messages, and also went back to my notes to compare some lines of code. Overall, I am very satisfied with what I've learned and improved. Not only have my general coding experiences expanded, but I also learned more about how database can play into a usable website.

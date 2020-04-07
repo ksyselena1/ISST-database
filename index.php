@@ -1,5 +1,4 @@
 <?php include("includes/init.php");
-$title = "Course Catalog";
 
 $db = open_sqlite_db('secure/catalog.sqlite');
 $messages = array();
@@ -112,7 +111,7 @@ if (isset($_POST["submit_insert"])) {
 
 <body>
   <main>
-    <h2><?php echo $title; ?></h2>
+    <h2>Course Catalog</h2>
     <p>Welcome to the course catalog for ISST (Information, Science, Systems, and Technology) majors.</p>
 
     <?php
@@ -133,7 +132,7 @@ if (isset($_POST["submit_insert"])) {
     </form>
 
     <?php
-    if ($dosearch) { // We have a specific shoe to query!
+    if ($dosearch) {
     ?>
       <h2>Search Results</h2>
 
@@ -147,8 +146,6 @@ if (isset($_POST["submit_insert"])) {
         );
       }
     } else {
-      // No shoe to query, so return everything!
-      // Hint: You don't need to change any of this code.
       ?>
       <h2>All Courses</h2>
       <?php
