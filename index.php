@@ -32,7 +32,7 @@ if (isset($_GET['search'])) {
   if (in_array($cat, array_keys(SEARCH_F))) {
     $search_f = $cat;
   } else {
-    array_push($messages, "* Invalid category for search.");
+    array_push($messages, "* Invalid category for search. *");
     $dosearch = FALSE;
   }
   $search = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_STRING);
@@ -72,7 +72,7 @@ if (isset($_POST["submit_insert"])) {
 
   // insert valid reviews into database
   if ($invalid_review) {
-    array_push($messages, "* Failed to add course. Invalid course or failed to complete course form.");
+    array_push($messages, "* Failed to add course. Invalid course or failed to complete course form. *");
   } else {
     $sql = "INSERT INTO courses (id, cname, numcredits, req, descriptions) VALUES (:id, :cname, :numcredits, :req, :descriptions)";
     $params = array(
@@ -84,9 +84,9 @@ if (isset($_POST["submit_insert"])) {
     );
     try {
       $result = exec_sql_query($db, $sql, $params);
-      array_push($messages, "* Your course has been recorded. Thank you for your contribution");
+      array_push($messages, "* Your course has been recorded. Thank you for your contribution *");
     } catch (Exception $e) {
-      array_push($messages, "* Failed to add course. Please check for existing courses.");
+      array_push($messages, "* Failed to add course. Please check for existing courses. *");
     }
   }
 }
